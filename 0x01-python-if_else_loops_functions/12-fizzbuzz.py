@@ -9,7 +9,4 @@ def fizzbuzz():
         elif i % 5 == 0:
             output += "Buzz "
         else:
-            output += str(i) + " "
-    print(output.rstrip())
-
-fizzbuzz()
+            print("{} ".format(i), end="")

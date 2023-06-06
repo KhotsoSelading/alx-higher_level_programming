@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-for number in range(10, 100):
-    if number % 10 > number // 10:
-        print("{:02d}".format(number), end=', ')
-
-print("89")
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{:d}{:d}".format(digit1, digit2))
+        else:
+            print("{:d}{:d}".format(digit1, digit2), end=", ")

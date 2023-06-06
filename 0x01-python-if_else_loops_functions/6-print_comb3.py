@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-for tens_digit in range(9):
-    for ones_digit in range(tens_digit + 1, 10):
-        print("{:d}{:d}".format(tens_digit, ones_digit), end=', ')
+for number in range(10, 100):
+    if number % 10 > number // 10:
+        print("{:02d}".format(number), end=', ')
+
 print("89")

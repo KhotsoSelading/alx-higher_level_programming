@@ -31,22 +31,15 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
 
-	/* Empty list or single node list is considered a palindrome */
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
-
-	/* Finding the middle node of the list */
 	while (fast && fast->next)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
 	}
-
-	/* Reversing the second half of the list */
 	reverse_listint(&slow);
 	dup = slow;
-
-	/* Comparing the first half and reversed second half of the list */
 	while (dup && temp)
 	{
 		if (temp->n == dup->n)
@@ -57,6 +50,5 @@ int is_palindrome(listint_t **head)
 		else
 			return (0);
 	}
-
 	return (1);
 }

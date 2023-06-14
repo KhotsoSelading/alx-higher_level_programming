@@ -6,8 +6,10 @@ def roman_to_int(roman_string):
     roman_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     result = 0
     prev_value = 0
+    i = len(roman_string) - 1
 
-    for char in reversed(roman_string):
+    while i >= 0:
+        char = roman_string[i]
         current_value = roman_dict[char]
 
         if current_value < prev_value:
@@ -16,5 +18,6 @@ def roman_to_int(roman_string):
             result += current_value
 
         prev_value = current_value
+        i -= 1
 
     return result

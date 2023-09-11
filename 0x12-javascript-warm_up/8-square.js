@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// A script that prints a square
 const iParser = parseInt(process.argv[2]);
 if (!isNaN(iParser)) {
   for (let iParser = 0; iParser < n; iParser++) {

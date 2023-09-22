@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists of all states"""
+"""Lists of all States"""
 import MySQLdb
 from sys import argv
 

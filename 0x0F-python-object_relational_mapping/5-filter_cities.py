@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Lists all cities by state passed by user"""
-
 import MySQLdb
 from sys import argv
 

@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Adds a new State on the system"""
-
 from sys import argv
 from model_state import Base, State
 from model_city import City

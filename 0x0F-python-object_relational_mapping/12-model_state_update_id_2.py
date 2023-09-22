@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Adds a new State to the system"""
-
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)

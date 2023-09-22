@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Defines City ORM object"""
-
 from sqlalchemy import Column, Integer, String, ForeignKey
 from relationship_state import Base
 

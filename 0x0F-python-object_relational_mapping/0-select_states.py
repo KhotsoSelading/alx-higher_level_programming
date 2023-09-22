@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Lists of all states"""
-
 import MySQLdb
 from sys import argv
 

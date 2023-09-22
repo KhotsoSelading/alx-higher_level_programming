@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Create a California State"""
-
 from sys import argv
 from relationship_state import Base
 from relationship_city import City

@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Deletes states whose name contains 'a' from database"""
-
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)

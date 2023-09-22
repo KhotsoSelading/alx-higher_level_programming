@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Create a California state"""
-
 from sys import argv
 from relationship_state import Base, State
 from sqlalchemy import (create_engine)

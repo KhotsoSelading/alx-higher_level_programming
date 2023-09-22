@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """All Alchemy states"""
-
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)

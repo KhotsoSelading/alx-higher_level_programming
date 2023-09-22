@@ -5,7 +5,8 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    db_conn = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
+    db_conn = MySQLdb.connect(host="localhost", port=3306, charset="utf8",
+                              user=argv[1], passwd=argv[2], db=argv[3])
     db_cur = db_conn.cursor()
     db_cur.execute("""
         SELECT cities.id, cities.name, states.name FROM cities
